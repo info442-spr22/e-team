@@ -1,18 +1,22 @@
-Team name: E-Safety 
+# E-Safety
 
-Roles:<br>
-Alan: PM <br>
-Stephanie: Developer<br>
-Xiao Xiao: UX/UI<br>
-Jacqueline: Developer<br>
+##Team Members
+Alan: PM  
+Stephanie: Developer  
+Xiao Xiao: UX/UI  
+Jacqueline: Developer  
+Yuemin: Developer 
 
-Team meetings weekly:<br>
-Thursday: 8pm 
+**Team meetings weekly:**  
+Thursday: 8pm  
 
-What are our problem statements: 
-Big city / campus safety - growing population 
-Safety of college students - campus/off-campus safety
-Early dection of noncommunitable diseases 
+##Mission Statement
+>To help UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid.
+
+## Problem Statements  
+**Big city / campus safety** - growing population   
+**Safety of college students** - campus/off-campus safety  
+**Early dection of noncommunitable diseases**   
 
 The development of big cities and individuals living on college campuses, safety and risks of students has gotten worse over the past decade.
 
@@ -33,4 +37,7 @@ Many off-campus UW students struggle with finding a safe route home when it is d
 
 Solution<br>
 We envision a web map application that helps UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid. The data used for these sites comes from user reports and also official announcements like UW Alerts. A walking buddy pair up feature would also be included for students to find walk buddies with similar routes to walk together.
+
+##Reference
+MLA
 
