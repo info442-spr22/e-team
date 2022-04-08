@@ -1,6 +1,6 @@
 # E-Safety
 
-##Team Members
+## Team Members
 Alan: PM  
 Stephanie: Developer  
 Xiao Xiao: UX/UI  
@@ -10,7 +10,7 @@ Yuemin: Developer
 **Team meetings weekly:**  
 Thursday: 8pm  
 
-##Mission Statement
+## Mission Statement
 >To help UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid.
 
 ## Problem Statements  
@@ -38,6 +38,6 @@ Many off-campus UW students struggle with finding a safe route home when it is d
 Solution<br>
 We envision a web map application that helps UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid. The data used for these sites comes from user reports and also official announcements like UW Alerts. A walking buddy pair up feature would also be included for students to find walk buddies with similar routes to walk together.
 
-##Reference
+## Reference
 MLA
 
