@@ -7,6 +7,7 @@ Many off-campus UW students have little access to resources that can help them s
 Furthermore, current existing apps focus more on students who live on campus and only pinpoint sites regarding previous crime incidents but do not consider alternative factors that students concern when it comes to choosing a safer route. To investigate further on such topics and learn about our target audience’s struggles, we conducted a survey among university students currently living in the U-District area.   
 
 As the survey shows, 95% of our respondents have experience living off-campus (see Fig.1). Out of these students, about 79% walk home alone (see Fig.2) on a regular basis (3-5 days out of a week and above). It shows that these students largely feel unsafe walking home alone during night time compared to daytime (see Fig.3 & 4), which also supports our assumption that people feel more threatened while walking home at night time. According to the qualitative data we collected through the survey, there are four major conclusions: 1) safety threats of walking home alone are likely to affect a student's class/study schedule 2) students prefer walking home with other people than alone, along with being able to access and share specific information of their walk and the chosen route 3) although past crime incident is still the primary factor of choosing a route, students also concern information regarding other non-crime-related factors that are not universally accessible to them 4) few students have used any technology to facilitate their safety even though they feel threatened by walking home alone on certain occasions.    
+<br>
 
 <p align = "center"><img src="img/Fig 1.png" alt="off-campus vs. on-campus" height="200">
 </p>
@@ -19,16 +20,16 @@ As the survey shows, 95% of our respondents have experience living off-campus (s
 <p align = "center">Fig.3</p>    
 <p align = "center"><img src="img/Fig 4.png" alt="night time safety" height="200">
 </p>
-<p align = "center">Fig.4</p>    
+<p align = "center">Fig.4</p>      
 
 ## Citations
-Seattle Crime Online Data Maps http://www.seattle.gov/police/information-and-data/online-crime-maps   
-Seattle Crime Rates
+"Seattle Crime Online Data Maps" http://www.seattle.gov/police/information-and-data/online-crime-maps   
+"Seattle Crime Rates"
 https://www.neighborhoodscout.com/wa/seattle/crime (Shows the safest Seattle Area)   
-King county Crime maps
+"King county Crime maps"
 https://kingcounty.gov/depts/sheriff/on-line-reporting/city-protect.aspx   
-Our survey
-https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edit?usp=sharing   
+[Our survey]
+(https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edit?usp=sharing)   
 
 
 ## Solution
