@@ -34,7 +34,7 @@ https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edi
 ## Solution
 We envision a web map application that helps UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid. The data used for these sites comes from user reports and also official announcements like UW Alerts. A secure travel feature would also be included for students to schedule secured walks. According to the departure time and the estimated transportation time，if the user does not log in the website and click arrive with the time frame, an alert would be sent to the user’s entered emergency contact.
 
-- Landing Page:   
+###Landing Page###           
 <img src="img/Landing Screen.png" alt="Landing screen" height="200">
 This is the landing screen of our website. Our website contains two main features: secured ride and incident report. Users can also enter their location and their desired destination to simply search for the desired route.<br>
 <br>
@@ -42,7 +42,7 @@ This is the landing screen of our website. Our website contains two main feature
 If time of departure is not entered, the map would only show locations of reported incidences near possible routes for the user.<br>
 <br>
 
-- Secure ride:<br>
+###Secure ride###
 <img src="img/Navigation.png" alt="Site navigation screen" height="200"><br>
 <img src="img/Route search 2.png" alt="Route search 2 screen" height="200"> 
 If the user entered a start location, a destination, and also selected an departure time from the drop down menu, the secure ride feature would be activated. The user can click on the “Send Travel Info '' button to secure the travel.<br>
@@ -58,7 +58,7 @@ When the user arrives their destination, they can click on the “My Profile” 
 This is the profile page when the “Arrived” or “Cancel” button is clicked or when there is no scheduled travel. The user can click on the “Schedule a travel” button to return to the landing page.<br>  
 <br>
 
-- Report Incident:     
+###Report Incident###
 <img src="img/Report incident flow.png" alt="Report incident flow screen" height="200"><br>  
 <img src="img/Report incident 1.png" alt="Report incident 1 screen" height="200">
 If the user clicked the “Report an Incident '' button on the landing page, the user would be directed to this page.The user can enter a location to notice other users place to avoid when choosing a route.The user would click to select one or more incident type. The user would also click the drop down menu to select the encounter time of the incident. The description column is optional.The user can then click on the “Submit” button to report the incident or click on the “Cancel”button to return to landing page.<br>
@@ -70,7 +70,7 @@ If the user did not select an incident type or time of encounter when clicking t
 If the user made all required selections and hit the submit button, a success message would appear to notify the user that their report has been submitted and stored. The incident they reported would also appear on the map (and visible for other users of the website). The user can click on the “Return Home Page” button to return to the landing page.<br>  
 <br>
 
-- Login/sign up & user profile setting up:      
+###Login/sign up & user profile setting up### 
 <img src="img/Setting up.png" alt="Profile Setting up screen" height="200"><br>
 <img src="img/Profile Building 1.png" alt="Profile Building 1 screen" height="200">
 The user can sign in with their UW email address if they already have an account or click the “create an account” to jump to account setup.<br>  
@@ -82,7 +82,7 @@ The user will enter their information accordingly. The columns with a red * sign
 If the user did not enter valid entries for the required columns, red error messages would appear.<br>
 <br>
 
-- If have time in the future:      
+- If have time in the future:<br>      
 <img src="img/Buddy Search 1.png" alt="Buddy Search 1 screen" height="200"><br>
 <img src="img/Buddy search 2.png" alt="Buddy Search 2 screen" height="200">   
 
