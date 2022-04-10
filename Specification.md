@@ -23,12 +23,12 @@ As the survey shows, 95% of our respondents have experience living off-campus (s
 <p align = "center">Fig.4</p>      
 
 ## Citations
-"Seattle Crime Online Data Maps" http://www.seattle.gov/police/information-and-data/online-crime-maps   
-"Seattle Crime Rates"
+"Seattle Crime Online Data Maps"  http://www.seattle.gov/police/information-and-data/online-crime-maps   
+"Seattle Crime Rates" 
 https://www.neighborhoodscout.com/wa/seattle/crime (Shows the safest Seattle Area)   
-"King county Crime maps"
+"King county Crime maps" 
 https://kingcounty.gov/depts/sheriff/on-line-reporting/city-protect.aspx   
-[Our survey](https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edit?usp=sharing)   
+Our survey https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edit?usp=sharing   
 
 
 ## Solution
