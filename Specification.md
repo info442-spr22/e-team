@@ -42,7 +42,7 @@ This is the landing screen of our website. Our website contains two main feature
 If time of departure is not entered, the map would only show locations of reported incidences near possible routes for the user.<br>
 <br>
 
-- Secure ride:     
+- Secure ride:<br>
 <img src="img/Navigation.png" alt="Site navigation screen" height="200"><br>
 <img src="img/Route search 2.png" alt="Route search 2 screen" height="200"> 
 If the user entered a start location, a destination, and also selected an departure time from the drop down menu, the secure ride feature would be activated. The user can click on the “Send Travel Info '' button to secure the travel.<br>
