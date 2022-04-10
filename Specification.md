@@ -1,4 +1,4 @@
-# E-Safety Specification
+# E-Safety Project Specification
 
 ## Team Members
 Alan: PM <br>
@@ -71,7 +71,7 @@ If the user did not enter valid entries for the required columns, red error mess
 - If have time in the future: <br>
 <img src="img/Buddy Search 1.png" alt="Buddy Search 1 screen">
 <br><br>
-<img src="img/Buddy Search 2.png" alt="Buddy Search 2 screen">
+<img src="img/Buddy search 2.png" alt="Buddy Search 2 screen">
 <br><br>
 
 ## Appendix A
