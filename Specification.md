@@ -1,7 +1,7 @@
 # E-Safety Project Specification
 
 ## Problem Statements
-As students at the University of Washington start to live off campus due to the pandemic and limited dorm capacity, safety with students walking home at night becomes a crucial issue.
+As students at the University of Washington start to live off campus due to the pandemic and limited dorm capacity, safety with students walking home becomes a crucial issue.
 Many off-campus UW students have little access to resources that can help them secure a route home that shows no threat to their safety, especially during night time.
 
 Furthermore, current existing apps focus more on students who live on campus and only pinpoint sites regarding previous crime incidents but do not consider alternative factors that students concern when it comes to choosing a safer route. To investigate further on such topics and learn about our target audience’s struggles, we conducted a survey among university students currently living in the U-District area.   
@@ -23,12 +23,14 @@ As the survey shows, 95% of our respondents have experience living off-campus (s
 <p align = "center">Fig.4</p>      
 
 ## Citations
-"Seattle Crime Online Data Maps"  http://www.seattle.gov/police/information-and-data/online-crime-maps   
-"Seattle Crime Rates" 
+
+- Kelly, Bridget Turner, and Alina Torres. "Campus safety: Perceptions and experiences of women students." Journal of College Student Development 47.1 (2006): 20-36. from https://muse.jhu.edu/article/192407/summary?casa_token=uGfUQILzc58AAAAA:Qdun2NYFh9TOvexSHXmYkuuW-9NxDUeCwnt81rfcatGiPfHto11ZZBN6gRlnWOrp-IjmuvfIlx4    
+- Pollack, Keshia M., et al. "Investigating and improving pedestrian safety in an urban environment." Injury epidemiology 1.1 (2014): 1-9. from https://injepijournal.biomedcentral.com/articles/10.1186/2197-1714-1-11   
+- Seattle Crime Online Data Maps  http://www.seattle.gov/police/information-and-data/online-crime-maps   
+- Seattle Crime Rates 
 https://www.neighborhoodscout.com/wa/seattle/crime (Shows the safest Seattle Area)   
-"King county Crime maps" 
+- King county Crime maps 
 https://kingcounty.gov/depts/sheriff/on-line-reporting/city-protect.aspx   
-Our survey https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edit?usp=sharing   
 
 
 ## Solution
@@ -83,4 +85,7 @@ If the user did not enter valid entries for the required columns, red error mess
 <img src="img/Buddy search 2.png" alt="Buddy Search 2 screen" height="200">   
 
 ## Appendix
-Link to Figma: https://www.figma.com/file/vitnbWVl9aHfcTMyZR4mRC/INFO-442?node-id=0%3A1
+
+- Link to Figma: https://www.figma.com/file/vitnbWVl9aHfcTMyZR4mRC/INFO-442?node-id=0%3A1
+
+- Our survey: https://docs.google.com/forms/d/1kV3ctIrdi9tFim5oL7-bxpqIS1ONmjtRInHFHgz17QE/edit?usp=sharing 
