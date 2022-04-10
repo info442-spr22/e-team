@@ -51,7 +51,7 @@ A success message would appear to indicate the activation of the secure travel.
 The user can click on the blue underlined “Cancel Travel” to link to the user profile page to cancel the travel.The user can also click on the “Return Home Page” button to return to the landing page.<br>
 <br>
 <img src="img/Profile Building 3.png" alt="Profile Building 3 screen" height="200"><br>
-When the user arrives their destination, they can click on the “My Profile” button on the top right corner of the top navigation bar to enter their profile page and click on the “Arrived” button (alert would not be sent to emergency contact). The user can also click on the “Cancel” button to cancel scheduled travel (alert would not be sent to emergency contact).<br>  
+When the user arrives their destination, they can click on the “My Profile” button on the top right corner of the top navigation bar to enter their profile page and click on the “Arrived” button (alert would not be sent to emergency contact). The user can also click on the “Cancel” button to cancel scheduled travel (alert would not be sent to emergency contact).<br>
 <br>
 <img src="img/Profile Building 4.png" alt="Profile Building 4 screen" height="200"><br>
 This is the profile page when the “Arrived” or “Cancel” button is clicked or when there is no scheduled travel. The user can click on the “Schedule a travel” button to return to the landing page.
@@ -70,16 +70,15 @@ If the user made all required selections and hit the submit button, a success me
 ### Login/sign up & user profile setting up
 <img src="img/Setting up.png" alt="Profile Setting up screen" height="200"><br>
 <img src="img/Profile Building 1.png" alt="Profile Building 1 screen" height="200"><br>
-The user can sign in with their UW email address if they already have an account or click the “create an account” to jump to account setup.<br>  
+The user can sign in with their UW email address if they already have an account or click the “create an account” to jump to account setup.<br>
 <br>
 <img src="img/Profile Building 2.png" alt="Profile Building 2 screen" height="200"><br>
-The user will enter their information accordingly. The columns with a red * sign next to it are required entries.<br>  
+The user will enter their information accordingly. The columns with a red * sign next to it are required entries.<br>
 <br>
 <img src="img/Profile Building 2 Error.png" alt="Profile Building 2 Error screen" height="200"><br>
 If the user did not enter valid entries for the required columns, red error messages would appear.
 
 ### If have time in the future:
-<br>
 <img src="img/Buddy Search 1.png" alt="Buddy Search 1 screen" height="200"><br>
 <img src="img/Buddy search 2.png" alt="Buddy Search 2 screen" height="200">   
 
