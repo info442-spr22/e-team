@@ -39,8 +39,7 @@ We envision a web map application that helps UW students identify possible dange
 This is the landing screen of our website. Our website contains two main features: secured ride and incident report. Users can also enter their location and their desired destination to simply search for the desired route.<br>
 <br>
 <img src="img/Route search 4.png" alt="Route4 screen" height="200"><br>
-If time of departure is not entered, the map would only show locations of reported incidences near possible routes for the user.<br>
-<br>
+If time of departure is not entered, the map would only show locations of reported incidences near possible routes for the user.
 
 ### Secure ride    
 <img src="img/Navigation.png" alt="Site navigation screen" height="200"><br>
@@ -55,8 +54,7 @@ The user can click on the blue underlined “Cancel Travel” to link to the use
 When the user arrives their destination, they can click on the “My Profile” button on the top right corner of the top navigation bar to enter their profile page and click on the “Arrived” button (alert would not be sent to emergency contact). The user can also click on the “Cancel” button to cancel scheduled travel (alert would not be sent to emergency contact).<br>  
 <br>
 <img src="img/Profile Building 4.png" alt="Profile Building 4 screen" height="200"><br>
-This is the profile page when the “Arrived” or “Cancel” button is clicked or when there is no scheduled travel. The user can click on the “Schedule a travel” button to return to the landing page.<br>  
-<br>
+This is the profile page when the “Arrived” or “Cancel” button is clicked or when there is no scheduled travel. The user can click on the “Schedule a travel” button to return to the landing page.
 
 ### Report Incident      
 <img src="img/Report incident flow.png" alt="Report incident flow screen" height="200"><br>  
@@ -67,8 +65,7 @@ If the user clicked the “Report an Incident '' button on the landing page, the
 If the user did not select an incident type or time of encounter when clicking the submit button, an error message would appear in red to notify the user to make a selection. The user can make a valid selection and report by clicking “submit” or click “Cancel” to return to the landing page.<br>
 <br>
 <img src="img/Report incident 2.png" alt="Report incident 2 screen" height="200"><br>
-If the user made all required selections and hit the submit button, a success message would appear to notify the user that their report has been submitted and stored. The incident they reported would also appear on the map (and visible for other users of the website). The user can click on the “Return Home Page” button to return to the landing page.<br>  
-<br>
+If the user made all required selections and hit the submit button, a success message would appear to notify the user that their report has been submitted and stored. The incident they reported would also appear on the map (and visible for other users of the website). The user can click on the “Return Home Page” button to return to the landing page. 
 
 ### Login/sign up & user profile setting up
 <img src="img/Setting up.png" alt="Profile Setting up screen" height="200"><br>
@@ -79,14 +76,12 @@ The user can sign in with their UW email address if they already have an account
 The user will enter their information accordingly. The columns with a red * sign next to it are required entries.<br>  
 <br>
 <img src="img/Profile Building 2 Error.png" alt="Profile Building 2 Error screen" height="200"><br>
-If the user did not enter valid entries for the required columns, red error messages would appear.<br>
-<br>
+If the user did not enter valid entries for the required columns, red error messages would appear.
 
 ### If have time in the future:
 <br>
 <img src="img/Buddy Search 1.png" alt="Buddy Search 1 screen" height="200"><br>
 <img src="img/Buddy search 2.png" alt="Buddy Search 2 screen" height="200">   
-
 
 ## Appendix
 Link to Figma: https://www.figma.com/file/vitnbWVl9aHfcTMyZR4mRC/INFO-442?node-id=0%3A1
