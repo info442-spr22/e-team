@@ -41,6 +41,7 @@ This is the landing screen of our website. Our website contains two main feature
 <img src="img/Route search 4.png" alt="Route4 screen" height="200">
 If time of departure is not entered, the map would only show locations of reported incidences near possible routes for the user.<br>
 <br>
+
 - Secure ride:  
 <img src="img/Navigation.png" alt="Site navigation screen" height="200"><br>
 <img src="img/Route search 2.png" alt="Route search 2 screen" height="200"> 
@@ -56,6 +57,7 @@ When the user arrives their destination, they can click on the “My Profile” 
 <img src="img/Profile Building 4.png" alt="Profile Building 4 screen" height="200">
 This is the profile page when the “Arrived” or “Cancel” button is clicked or when there is no scheduled travel. The user can click on the “Schedule a travel” button to return to the landing page.<br>  
 <br>
+
 - Report Incident:  
 <img src="img/Report incident flow.png" alt="Report incident flow screen" height="200"><br>  
 <img src="img/Report incident 1.png" alt="Report incident 1 screen" height="200">
@@ -67,6 +69,7 @@ If the user did not select an incident type or time of encounter when clicking t
 <img src="img/Report incident 2.png" alt="Report incident 2 screen" height="200">
 If the user made all required selections and hit the submit button, a success message would appear to notify the user that their report has been submitted and stored. The incident they reported would also appear on the map (and visible for other users of the website). The user can click on the “Return Home Page” button to return to the landing page.<br>  
 <br>
+
 - Login/sign up & user profile setting up:   
 <img src="img/Setting up.png" alt="Profile Setting up screen" height="200"><br>
 <img src="img/Profile Building 1.png" alt="Profile Building 1 screen" height="200">
@@ -78,6 +81,7 @@ The user will enter their information accordingly. The columns with a red * sign
 <img src="img/Profile Building 2 Error.png" alt="Profile Building 2 Error screen" height="200">
 If the user did not enter valid entries for the required columns, red error messages would appear.<br>
 <br>
+
 - If have time in the future:    
 <img src="img/Buddy Search 1.png" alt="Buddy Search 1 screen" height="200"><br>
 <img src="img/Buddy search 2.png" alt="Buddy Search 2 screen" height="200">   
