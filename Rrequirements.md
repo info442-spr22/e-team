@@ -4,14 +4,17 @@ This document defines all requirements for the product. It will be used as a bas
 Requirements labeled as **out of scope** are requirements developers would like to achieve but do not commit to. Non-functional requirements are set as a guide for designing properties of the web application. Considering the time given for the project, non-functional requirements are labeled as **out of scope**. Other requirements are considered as **core requirements** that developers commit to achieve.
 
 ## Login in/ sign up Page
-1. Contains a Welcome phrase/sentences with logo on the center of the page.
-1. Contains ID & Password fields beneath the welcome phrase.
-1. Contains “Log In” button below the ID/password fields.
-1. Contains “Sign up” button next to the Log in button.
+1. Contains a Welcome phrase/sentences (“Sign in or create an account to secure your travel or report an incident to make night walking safter for the Dawg pack”) with logo on the center of the page.
+1. Contains UW email & Password fields beneath the welcome phrase.
+1. Contains “Sign In” button below the email/password fields.
+1. Contains “Create an account” button below to the sign in button.
 1. Contains “If you don’t already have an account, sign up here” phrase below the “Sign up” Button
 1. If the user clicks on Sign up button, it leads to sign up page.
 1. Sign up page includes fields that requires user’s first and last name, contact # / email.
 1. Contains Sign up button at bottom of page.
+   * After signing up, the user would be navigates to the profile building page. User is required to enter their user name (text entry). Profile picture and discription section is optional. 
+   * If the user name section is not entered when hitting the submit button, a red error message would show up saying :”Please enter a valid user name”
+   * If required information are all filled out, by clicking the submit button, the user would be navigated to the home page.
 1. If the user hits sign up/log in button, it leads to the Home page.
 1. **(Out of scope)** if the user typed the wrong id/password more than 3 times, show the “Forgot your ID/Password?” phrase with a link associated with it.
 1. **(Out of scope)** the “Forgot your ID/Password” link leads to the user’s previously chosen way of contact. (Email, phone number, etc).
@@ -30,15 +33,15 @@ Requirements labeled as **out of scope** are requirements developers would like 
 
 
 ## Home (map) Page:
-1. On the right side of the screen, there is a map shown zoomed into the University of Washington, with the center as the user’s location
-1. On the map, there are different colored map pin icons displaying different incident traffic such as violent incident, homeless people, or dim lights
-1. If you click on a pin, it will show a short description of the type of incident that it is
-on the left side of the page, there is a button labeled as ‘Report an Incident’ where the purpose of this button is for if the user notices an incident around them, they are able to report it.
-1. Once clicking the button, it will display a form asking for the Location of the Incident, Incident type, time of encounter, and the description of the incident. When the user is finished filling out the form, they have two button options: to submit the form or to cancel the form.
+1. On the right side of the screen, there is a map shown zoomed into the University of Washington (the whole map covers an area of a four miles radius from the University of Washington), with the center as the user’s location
+1. On the map, there are different colored map pin icons displaying different incident traffic such as violent incident, homeless people, or dim lights. Red pin icon refers to crime related reports, yellow pin icon refers to dim light report, purple refers to smell of drug report, green refers to yelling or loud noise report, pink refers to weird people report, and gray refers to the “other” reports (incident type that is not included in the above given choices)
+1. If you click on a pin, it will show a short description of the type of incident that it is. The short description includes the incident type and incident report date.
+1. On the left side of the page, there is a button labeled as ‘Report an Incident’ where the purpose of this button is for if the user notices an incident around them, they are able to report it.
+1. Once clicking the ‘Report an Incident’ button, it will display a form asking for the Location of the Incident, Incident type (in the form of check box), datetime of encounter (in the form of drop down menu), and the description of the incident (in the form of text entry box). For this form, the location, incident type, and date of encounter is required entry.
+   * When the user is finished filling out the form, they have two button options: to submit the form or to cancel the form.
    * Clicking the ‘cancel’ button will navigate the user back to the original home page with just the button with ‘Report an Incident’
    * Clicking the submit button will navigate the user to a ‘report submitted’ once submitted successfully and a button to navigate ‘Return to Home Page’
-     * If the user did not properly fill out the first three form questions, they will not be able to continue on, and there will be text in red stating that they are missing information that they need to complete
-
+     * If the user did not properly fill out the first three form questions, they will not be able to continue on, and there will be text in red stating that they are missing information that they need to complete.( Error message: “Please select an incident type” / “Please select date of encounter” / “Please enter a valid location”)
 
 ## Non-functional requirement (out of scope)
 1. Performance
