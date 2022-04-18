@@ -1,5 +1,6 @@
 # Requirements
 This document defines all requirements for the product. It will be used as a basis for creating development tasks and the development phase will be graded against completion of these requirements.<br>
+<br>
 Requirements labeled as **out of scope** are requirements developers would like to achieve but do not commit to. Non-functional requirements are set as a guide for designing properties of the web application. Considering the time and capacity of our developers, non-functional requirements are labeled as **out of scope**. Other requirements are considered as **core requirements** that developers commit to achieve.
 
 ## Login in/ sign up Page
@@ -46,16 +47,13 @@ on the left side of the page, there is a button labeled as ‘Report an Incident
    * Time to load a new incident report on the map after it’s successfully submitted must be less than 5 seconds
    * Time to load the pin on the map after the user input valid location information must be less than 1 second
    * Time to first contentful paint on initial user profile must be less than 1 second
-
 1. Security
    * Users shall not be able to access the report history or real-time geo-location information of other users unless they have the role of “site admin”
    * New user accounts will require email validation before becoming active
    * The application will protect user data in compliance with [EU’s General Data Protection Regulations (GDPR)](https://gdpr.eu/)
-
 1. Reliability
    * The service must be available to the users 98% of the time
    * System must return available to the users within 3 hours after failure
-
 1. Usability
    * All text on the site will have acceptable contrast ratios, as tested by [WebAIM’s Contrast Checker](https://accessibe.com/ace?gclid=CjwKCAjw9e6SBhB2EiwA5myr9pbaLVNhkXinSARdLHDzLw6ixCLWO3s4oCVc0YrcOjZi5sRoM0XmwhoCHMwQAvD_BwE)
    * The palette used for different icons must be colorblind-friendly
