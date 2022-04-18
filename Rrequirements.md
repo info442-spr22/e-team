@@ -1,7 +1,7 @@
 # Requirements
 This document defines all requirements for the product. It will be used as a basis for creating development tasks and the development phase will be graded against completion of these requirements.<br>
 <br>
-Requirements labeled as **out of scope** are requirements developers would like to achieve but do not commit to. Non-functional requirements are set as a guide for designing properties of the web application. Considering the time and capacity of our developers, non-functional requirements are labeled as **out of scope**. Other requirements are considered as **core requirements** that developers commit to achieve.
+Requirements labeled as **out of scope** are requirements developers would like to achieve but do not commit to. Non-functional requirements are set as a guide for designing properties of the web application. Considering the time given for the project, non-functional requirements are labeled as **out of scope**. Other requirements are considered as **core requirements** that developers commit to achieve.
 
 ## Login in/ sign up Page
 1. Contains a Welcome phrase/sentences with logo on the center of the page.
