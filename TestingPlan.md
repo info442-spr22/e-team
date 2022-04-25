@@ -59,23 +59,25 @@ Click on the report an incident button. (If not signed in, show a pop-up message
 - Make valid entries for all required fields. Click on the submit button. Expect to see a text message (“Report submitted”)(home page 3). Click on the Return to Map Page button. Expected to be redirected to the home page. (home page 1)
 - Make invalid entries for random required field(s). Click on the submit button. Expect to see an error message (“Please select an incident type” or “Please select date of encounter” or “Please enter a valid location” ) in red.
 - Click the cancel button. Expected to redirect to the home page. (home page 1)
+
 ### Follow up questions to ask the user
 - What aspects do you like and dislike about the style and design of the application?
 - Would you see yourself using this application? Why or why not?
 - How easy do you think you can find the information you need on the application?
+
 ## Appendix
-![Home page 1](img/Homepage1) <br>
+![Home page 1](./img/Homepage1.png) <br>
 Home page 1<br>
-![Home page 2](img/Homepage2)<br>
+![Home page 2](./img/Homepage2.png)<br>
 Home page 2<br>
-![Home page 3](img/Homepage3)<br>
+![Home page 3](./img/Homepage3.png)<br>
 Home page 3<br>
-![Profile page 1](img/profilepage1)<br>
+![Profile page 1](./img/profilepage1.png)<br>
 Profile page 1<br>
-![Profile page 2](img/profilepage2)<br>
+![Profile page 2](./img/profilepage2.png)<br>
 Profile page 2<br>
-![Sign in page](img/signinpage)<br>
+![Sign in page](./img/signinpage.png)<br>
 Sign in page<br>
-![Create an account page](img/create_account)<br>
+![Create an account page](./img/create_account.png)<br>
 Create an account page<br>
  
