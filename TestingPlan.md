@@ -10,7 +10,6 @@ Each thursday during development, the project manager will run the acceptance te
 The test will be tested through zoom or in person by UW students living on/off campus near UW area by April 27th for the Hi-fi design and the implemented and published app will be tested by week 8. 
  
 ## Code
-URL of the application <br>
 We will record the screen including the voice under permission. Then as a team, we will discuss and look back to see whenever a bug is reported during our weekly meetings. If the subject does not allow, we will take notes throughout the testing. <br>
  
 If there is a bug, it will be assigned to the developer/designer who worked on that specific feature. If they cannot figure it out, we will talk about who can fix it. We will also bring up issues during our weekly meetings. <br>
@@ -41,7 +40,7 @@ Expected to see text (“Build your profile”) and account creation form. The f
 ### User profile page
 Need user authentication to visit. If not signed in, the my profile button on the top right corner of the home page should be replaced with a sign in button.<br>
 
-**While signed in: (profile page 1)**
+While signed in: (profile page 1)<br>
 Expect to see user name, description (if not entered while creating account, leave blank).<br>
 - Click on the pencil icon. Expected to appear in the text entry box for users to enter to change user name and description. Click on the save button. Expect to see updated user name and description. 
 Expect to see report history.
@@ -57,11 +56,26 @@ Click on the incident report pin on the map to see detail information of the rep
 Enter a valid location in the search location entry box and hit enter. Expect to see the map zoom into the entered location. If the location entry is invalid, expect to see an error message (“Please enter valid location”) in red.
 
 Click on the report an incident button. (If not signed in, show a pop-up message of “Please sign in to make a report”). Expected to see incident report form, with entry fields of incident location (text entry), incident type (check box), incident encounter date (drop down menu), and incident description (text entry). Every field except incident description is required. (home page 2)
-Make valid entries for all required fields. Click on the submit button. Expect to see a text message (“Report submitted”)(home page 3). Click on the Return to Map Page button. Expected to be redirected to the home page. (home page 1)
-Make invalid entries for random required field(s). Click on the submit button. Expect to see an error message (“Please select an incident type” or “Please select date of encounter” or “Please enter a valid location” ) in red.
-Click the cancel button. Expected to redirect to the home page. (home page 1)
+- Make valid entries for all required fields. Click on the submit button. Expect to see a text message (“Report submitted”)(home page 3). Click on the Return to Map Page button. Expected to be redirected to the home page. (home page 1)
+- Make invalid entries for random required field(s). Click on the submit button. Expect to see an error message (“Please select an incident type” or “Please select date of encounter” or “Please enter a valid location” ) in red.
+- Click the cancel button. Expected to redirect to the home page. (home page 1)
 ### Follow up questions to ask the user
 - What aspects do you like and dislike about the style and design of the application?
 - Would you see yourself using this application? Why or why not?
 - How easy do you think you can find the information you need on the application?
+## Appendix
+![Home page 1](img/Homepage1) <br>
+Home page 1<br>
+![Home page 2](img/Homepage2)<br>
+Home page 2<br>
+![Home page 3](img/Homepage3)<br>
+Home page 3<br>
+![Profile page 1](img/profilepage1)<br>
+Profile page 1<br>
+![Profile page 2](img/profilepage2)<br>
+Profile page 2<br>
+![Sign in page](img/signinpage)<br>
+Sign in page<br>
+![Create an account page](img/create_account)<br>
+Create an account page<br>
  
