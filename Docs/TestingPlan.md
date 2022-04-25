@@ -66,18 +66,18 @@ Click on the report an incident button. (If not signed in, show a pop-up message
 - How easy do you think you can find the information you need on the application?
 
 ## Appendix
-![Home page 1](./img/Homepage1.png) <br>
+![Home page 1](../img/Homepage1.png) <br>
 Home page 1<br>
-![Home page 2](./img/Homepage2.png)<br>
+![Home page 2](../img/Homepage2.png)<br>
 Home page 2<br>
-![Home page 3](./img/Homepage3.png)<br>
+![Home page 3](../img/Homepage3.png)<br>
 Home page 3<br>
-![Profile page 1](./img/profilepage1.png)<br>
+![Profile page 1](../img/profilepage1.png)<br>
 Profile page 1<br>
-![Profile page 2](./img/profilepage2.png)<br>
+![Profile page 2](../img/profilepage2.png)<br>
 Profile page 2<br>
-![Sign in page](./img/signinpage.png)<br>
+![Sign in page](../img/signinpage.png)<br>
 Sign in page<br>
-![Create an account page](./img/create_account.png)<br>
+![Create an account page](../img/create_account.png)<br>
 Create an account page<br>
  
