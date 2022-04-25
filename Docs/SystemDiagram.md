@@ -1,1 +1,1 @@
-<img src="img/SystemDiagram.png" width="500" height="500">
+<img src="../img/SystemDiagram.png" width="500" height="500">
