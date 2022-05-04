@@ -3,8 +3,26 @@ body {
     font-size: 16px;
     color: ivory;
 }
+
 h1 {
     color: white;
-    background-color: gray;
-    padding: 1em;
+    padding: 0.5em;
 }
+
+.titlebar {
+    background-color: gray;
+}
+
+.btn {
+    background-color: white;
+  }
+
+.btn.profile {
+    border-color: #04AA6D;
+    color: green;
+    padding: 5px 25px;
+    font-size: 16px;
+    border-radius: 7px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    position: absolute;
+  }
