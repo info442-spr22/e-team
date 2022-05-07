@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.titlebar {
+  color: white;
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
+.profile {
+  color: rgb(50, 166, 212);
+  border-radius:10%;
+  border-color: rgb(50, 166, 212);
+  box-shadow: 0 .2rem 1rem rgba(69, 69, 69, 0.1);
+}
+
+.boxes {
+  display: flex;
+}
+
+.boxes-column {
+  padding: 1em;
+}
+
+.incident{
+  color:white;
+  border-radius:10%;
+  margin-top: 500px;
+  background-color: rgb(50, 166, 212);
+}
+
+h2 {
+  text-align: left;
+}
+
+.home {
+  color:white;
+  border-radius:5%;
+  background-color: rgb(50, 166, 212);
+}
