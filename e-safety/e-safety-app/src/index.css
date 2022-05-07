@@ -21,9 +21,9 @@ h1 {
 }
 
 .profile {
-  color: green;
+  color: rgb(50, 166, 212);
   border-radius:10%;
-  border-color: green;
+  border-color: rgb(50, 166, 212);
   box-shadow: 0 .2rem 1rem rgba(69, 69, 69, 0.1);
 }
 
@@ -35,17 +35,20 @@ h1 {
   padding: 1em;
 }
 
-.boxes-row {
-  padding-top: 650px;
-}
-
-.{
-  color: green;
+.incident{
+  color:white;
   border-radius:10%;
-  border-color: green;
-  box-shadow: 0 .2rem 1rem rgba(69, 69, 69, 0.1);
+  margin-top: 500px;
+  background-color: rgb(50, 166, 212);
 }
 
 h2 {
   text-align: left;
+  margin-left: 1cm;
+}
+
+.home {
+  color:white;
+  border-radius:5%;
+  background-color: rgb(50, 166, 212);
 }

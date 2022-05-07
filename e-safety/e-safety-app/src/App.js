@@ -5,6 +5,7 @@ import 'firebase/compat/auth';
 
 import HomePage from './components/HomePage';
 import SignInPage from './components/SignInPage';
+import ProfilePage from './components/ProfilePage';
 
 function App() {
   const [auth, setAuth] = useState(false || window.localStorage.getItem("auth")==="true");
@@ -53,6 +54,7 @@ function App() {
         />
       </div>
       ) : (<SignInPage loginWithGoogle={loginWithGoogle}/>)}
+      <ProfilePage />
     </div>
   );
 }
