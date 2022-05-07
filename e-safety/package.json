@@ -16,6 +16,8 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "firebase-admin": "^10.1.0",
-    "nodemon": "^2.0.16"
+    "mapbox-gl": "^2.8.2",
+    "nodemon": "^2.0.16",
+    "react-map-gl": "^7.0.11"
   }
 }
