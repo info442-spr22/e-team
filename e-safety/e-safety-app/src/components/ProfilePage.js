@@ -10,7 +10,7 @@ export default function ProfilePage({token}) {
 
     return (
     <div>
-        <h1>User's Profile</h1>
+        <h1>Profile Page</h1>
 
         <div class="name">
             <h2>Name: </h2>

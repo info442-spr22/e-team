@@ -52,9 +52,9 @@ function App() {
           userId={userId}
           setId={setId}
         />
-        <ProfilePage />
       </div>
       ) : (<SignInPage loginWithGoogle={loginWithGoogle}/>)}
+      <ProfilePage />
     </div>
   );
 }
