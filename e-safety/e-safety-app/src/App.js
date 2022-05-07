@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import HomePage from './components/HomePage';
+import ProfilePage from './components/ProfilePage';
 
 function App() {
   const [auth, setAuth] = useState(false || window.localStorage.getItem("auth")==="true");
@@ -46,5 +47,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
