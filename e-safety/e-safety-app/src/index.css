@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Georgia, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,8 +12,26 @@ code {
     monospace;
 }
 
+button {
+  font-family: Georgia;
+  color: black;
+  border-radius:10%;
+  border-color: #FFCB3E;
+  box-shadow: 0 .2rem 1rem rgba(69, 69, 69, 0.1);
+  background-color: #FFCB3E;
+  height:50px;
+  width:100px;
+}
+
 .titlebar {
-  color: white;
+  color: #FFCB3E;
+  background-color: #7E549F !important;
+}
+
+.btn.profile {
+  height:80px;
+  width:50px;
+  text-align: center;
 }
 
 h1 {
@@ -21,10 +39,11 @@ h1 {
 }
 
 .profile {
-  color: rgb(50, 166, 212);
+  color: black;
   border-radius:10%;
-  border-color: rgb(50, 166, 212);
+  border-color: #FFCB3E;
   box-shadow: 0 .2rem 1rem rgba(69, 69, 69, 0.1);
+  background-color: #FFCB3E;
 }
 
 .boxes {
@@ -36,10 +55,10 @@ h1 {
 }
 
 .incident{
-  color:white;
+  color:black;
   border-radius:10%;
   margin-top: 500px;
-  background-color: rgb(50, 166, 212);
+  background-color: #FFCB3E;
 }
 
 h2 {
@@ -48,7 +67,7 @@ h2 {
 }
 
 .home {
-  color:white;
+  color:black;
   border-radius:5%;
-  background-color: rgb(50, 166, 212);
+  background-color: #FFCB3E;
 }
