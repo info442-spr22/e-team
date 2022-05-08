@@ -37,8 +37,8 @@ const MAP_MODEL = () => {
       <MapGL
         ref={mapRef}
         {...viewport}
-        width="100%"
-        height="100%"
+        width="90%"
+        height="90%"
         onViewportChange={handleViewportChange}
         mapboxApiAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/fuwak0o0/cl2vqyhwn000n14tgci6txwby"
