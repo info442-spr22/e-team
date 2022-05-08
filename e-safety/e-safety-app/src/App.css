@@ -43,3 +43,9 @@
     transform: rotate(360deg);
   }
 }
+
+.homeText {
+  margin-left: 37px;
+  text-align: left;
+  margin-right: 60px;
+}
