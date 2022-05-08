@@ -1,11 +1,12 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import Map from 'react-map-gl';
 import ProfilePage from './ProfilePage';
+import Map from 'react-map-gl';
 import ReportPage from './ReportPage';
+import MAP_MODEL from './Map'
 // import firebase from 'firebase/compat/app';
 import { getAuth, signOut } from "firebase/auth";
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiZnV3YWswbzAiLCJhIjoiY2wydnFydGZxMGVqNTNkb2EwN2ZkNHcxdyJ9.UztIdH-2TQS0MtVez1xznA';
+
 
 export default function HomePage({token}) {
 
@@ -42,17 +43,7 @@ export default function HomePage({token}) {
         </div>
     </div>
     <div id = "map">
-    <Map
-      initialViewState={{
-        latitude: 47.662777,
-        longitude: -122.313877,
-        zoom: 14
-      }}
-      style={{height: 600}}
-      mapStyle="mapbox://styles/fuwak0o0/cl2vqyhwn000n14tgci6txwby"
-      mapboxAccessToken={MAPBOX_TOKEN}
-    >
-    </Map>
+      <MAP_MODEL />
     </div>
     <div class="boxes">
       <section class="boxes-column col-a">
