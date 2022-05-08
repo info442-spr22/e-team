@@ -22,7 +22,7 @@ All changes will be deployed to production as they are completed.
 
 - Set up Firebase – This will be completed on April 29th, 2 days into the sprint. This will just be a blank page that is unstyled and static. We should have all the set up so that the website is hosted, and everything is in line to start development
 - Set up MongoDB – this will be our main database and be completed on May 1st where live data can be stored. We should have created our datatables and endpoints to be able to GET, POST, DELETE, and PATCH data into the MongoDB.
-- Home page Feature – May 6th. This should be a dynamic map with data pulled from an API. This map will allow us to filter through locations and zoom in and out. Users will be able to click on a location on the map and it’ll return a longitude and latitude value.
+- Home page Feature – May 6th. This should be a dynamic map with data pulled from an API. This map will allow us to filter through locations and zoom in and out.
 - Live Data will be able to be stored by May 8th with reported incidents. Reporting incidents will be able to be used by users. Data will be stored through MongoDB on mLab and other users will be able to see this information
 
 
