@@ -1,11 +1,13 @@
 import './App.css';
 import React, {useEffect, useState} from 'react';
+import { Route, Redirect, Switch } from "react-router-dom";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
 import HomePage from './components/HomePage';
 import SignInPage from './components/SignInPage';
 import ProfilePage from './components/ProfilePage';
+import NavBar from './components/NavBar';
 
 function App() {
   const [auth, setAuth] = useState(false || window.localStorage.getItem("auth")==="true");
@@ -44,18 +46,21 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {auth ? (<div>
-        <HomePage // THIS IS PASSING IN DIFFERENT VARIABLES INTO THE PROPS
-          token={token}
-          logOutOfAccount={logOutOfAccount}
-          userId={userId}
-          setId={setId}
-        />
+      <div className="App">
+        {auth ? (<div>
+          <NavBar logOutOfAccount={logOutOfAccount}/>
+          <Switch>
+            <Route path="/home"><HomePage 
+            token={token}
+            userId={userId}
+            setId={setId}/></Route>
+            <Route path="/profile"><ProfilePage /></Route>
+            <Redirect to="/home"/>
+          </Switch>
+        </div>
+        ) : (<SignInPage loginWithGoogle={loginWithGoogle}/>)}
       </div>
-      ) : (<SignInPage loginWithGoogle={loginWithGoogle}/>)}
-      <ProfilePage />
-    </div>
+
   );
 }
 
