@@ -8,11 +8,13 @@ import HomePage from './components/HomePage';
 import SignInPage from './components/SignInPage';
 import ProfilePage from './components/ProfilePage';
 import NavBar from './components/NavBar';
+import ReportPage from './components/ReportPage';
 
 function App() {
   const [auth, setAuth] = useState(false || window.localStorage.getItem("auth")==="true");
   const [token, setToken] = useState('');
-  const [userId, setUserId] = useState('');
+  const [user, setUser] = useState('');
+
 
   useEffect(()=> {
     firebase.auth().onAuthStateChanged((userCred)=> {
@@ -41,8 +43,12 @@ function App() {
     window.localStorage.setItem('auth', false);
   }
 
-  function setId (id) {
-    setId = id;
+  const handleUserData = (data) => {
+    if (!user) {
+      console.log("handleUserData");
+      console.log(data);
+      setUser(data);
+    }
   }
 
   return (
@@ -51,10 +57,9 @@ function App() {
           <NavBar logOutOfAccount={logOutOfAccount}/>
           <Switch>
             <Route path="/home"><HomePage 
-            token={token}
-            userId={userId}
-            setId={setId}/></Route>
-            <Route path="/profile"><ProfilePage /></Route>
+            token={token} handleUserData={handleUserData}/></Route>
+            <Route path="/profile"><ProfilePage token={token} user={user}/></Route>
+            <Route path="/report"><ReportPage /></Route>
             <Redirect to="/home"/>
           </Switch>
         </div>

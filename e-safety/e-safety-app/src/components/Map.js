@@ -54,4 +54,4 @@ const MAP_MODEL = () => {
   );
 };
 
-export default MAP_MODEL
+export default MAP_MODEL;

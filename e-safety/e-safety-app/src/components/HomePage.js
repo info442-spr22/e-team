@@ -1,20 +1,14 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import ProfilePage from './ProfilePage';
-import Map from 'react-map-gl';
-import ReportPage from './ReportPage';
+import { Link } from 'react-router-dom';
 import MAP_MODEL from './Map'
-// import firebase from 'firebase/compat/app';
-import { getAuth, signOut } from "firebase/auth";
-
 
 export default function HomePage(props) {
-
   useEffect(() => {
     if (props.token) {
       fetchData(props.token);
     }
-  }, [props.token]);
+  });
 
   const fetchData = async (token) => {
     console.log("hello inside fetchData of HomePage.js")
@@ -29,9 +23,9 @@ export default function HomePage(props) {
       console.log("create new user")
       await createNewUser(res.data.id, token);
     }
+    props.handleUserData(res.data.user);
   }
 
-  // THIS IS AN EXAMPLE FUNCTION ON CALLING A POST METHOD TO THE BACKEND
   async function createNewUser (id, token) {
     const data = {body: id}
     await axios.post(`http://localhost:8000/user`, data ,{
@@ -57,7 +51,9 @@ export default function HomePage(props) {
           </p>
         </div>
         <div className="report">
-            <button type="button" className="btn incident" onClick={<ReportPage />}>Report an Incident</button>
+          <Link to="/report">
+            <button type="button" className="btn incident">Report an Incident</button>
+          </Link>
         </div>
       </div>
     </div>
