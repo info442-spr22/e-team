@@ -56,11 +56,11 @@ export default function HomePage(props) {
             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </div>
-        <div className="report">
-          <Link to={'/report'}>
-          <button > Report and Incident </button>
-          </Link>
+          <div className="report">
+            <Link to={'/report'}>
+            <button > Report and Incident </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
