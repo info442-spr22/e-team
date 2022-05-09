@@ -7,6 +7,7 @@ import 'firebase/compat/auth';
 import HomePage from './components/HomePage';
 import SignInPage from './components/SignInPage';
 import ProfilePage from './components/ProfilePage';
+import ReportPage from './components/ReportPage';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -50,11 +51,12 @@ function App() {
         {auth ? (<div>
           <NavBar logOutOfAccount={logOutOfAccount}/>
           <Switch>
-            <Route path="/home"><HomePage 
+            <Route path="/home"><HomePage
             token={token}
             userId={userId}
             setId={setId}/></Route>
             <Route path="/profile"><ProfilePage /></Route>
+            <Route path="/report"><ReportPage /></Route>
             <Redirect to="/home"/>
           </Switch>
         </div>
