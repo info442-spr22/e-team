@@ -3,6 +3,9 @@ import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import React, { useState, useRef, useCallback } from 'react'
 import MapGL from 'react-map-gl'
 import Geocoder from 'react-map-gl-geocoder'
+import mapboxgl from 'mapbox-gl';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 // Ways to set Mapbox token: https://uber.github.io/react-map-gl/#/Documentation/getting-started/about-mapbox-tokens
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiZnV3YWswbzAiLCJhIjoiY2wydnFydGZxMGVqNTNkb2EwN2ZkNHcxdyJ9.UztIdH-2TQS0MtVez1xznA'

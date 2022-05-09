@@ -20,6 +20,7 @@
     "nodemon": "^2.0.16",
     "react-datepicker": "^4.7.0",
     "react-map-gl": "^6.1.19",
-    "react-map-gl-geocoder": "^2.2.0"
+    "react-map-gl-geocoder": "^2.2.0",
+    "worker-loader": "^3.0.8"
   }
 }

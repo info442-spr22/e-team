@@ -2,6 +2,9 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 import * as React from 'react';
 import { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
+import mapboxgl from 'mapbox-gl';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiZnV3YWswbzAiLCJhIjoiY2wydnFydGZxMGVqNTNkb2EwN2ZkNHcxdyJ9.UztIdH-2TQS0MtVez1xznA'
 
