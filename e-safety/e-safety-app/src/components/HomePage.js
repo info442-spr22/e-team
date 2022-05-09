@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
+import {Link} from "react-router-dom";
 import ProfilePage from './ProfilePage';
 import Map from 'react-map-gl';
 import ReportPage from './ReportPage';
@@ -57,7 +58,9 @@ export default function HomePage(props) {
           </p>
         </div>
         <div className="report">
-            <button type="button" className="btn incident" onClick={<ReportPage />}>Report an Incident</button>
+          <Link to={'/report'}>
+          <button > Report and Incident </button>
+          </Link>
         </div>
       </div>
     </div>
