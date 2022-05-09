@@ -1,58 +1,103 @@
-import React from 'react';
-import { Link} from "react-router-dom";
 
-export default function ReportPage(props) {
-  
+
+import React from 'react';
+import MAP_MODEL from './Map';
+import Date from './DatePicker';
+import { Link } from 'react-router-dom';
+
+export default function ReportPage({token}) {
+
   async function submitForm() {
-    
+    // TODO: 
+    // insert form data into the database
   }
 
   return (
-    <div>
+    <div class = "report">
       <h1>Report an Incident</h1>
+      <div id = "map">
+        <MAP_MODEL />
+      </div>
+      <div>
+        <h3>Select Date</h3>
+        <Date />
+      </div>
+      <div>
+        <h3>Select Incident Type</h3>
+        <div id = "incident type">
+        <input
+          type="checkbox"
+          id="topping"
+          name="topping"
+          value="Paneer"
+        />
+        Crime
+        </div>
+        <div id = "incident type">
+        <input
+          type="checkbox"
+          id="topping"
+          name="topping"
+          value="Paneer"
+        />
+        Dim Light
+        </div>
+        <div id = "incident type">
+        <input
+          type="checkbox"
+          id="topping"
+          name="topping"
+          value="Paneer"
+        />
+        Drug Activity
+        </div>
+        <div id = "incident type">
+        <input
+          type="checkbox"
+          id="topping"
+          name="topping"
+          value="Paneer"
+        />
+        Yelling/verbal aggression
+        </div>
+        <div id = "incident type">
+        <input
+          type="checkbox"
+          id="topping"
+          name="topping"
+          value="Paneer"
+        />
+        Suspicious individuals
+        </div>
+        <div id = "incident type">
+        <input
+          type="checkbox"
+          id="topping"
+          name="topping"
+          value="Paneer"
+        />
+        Other
+        </div>
+      </div>
+      <h3>Select Incident Type</h3>
       <form>
-        <div>
-          <label for="location">Location</label>
-          <input type="text" id="location" name="location"/>
-        </div>
-        <div>
-          <label for="incident-type">Select Incident Type:</label>
-          <br />
-
-          <input type="radio" id="crime" name="incident" value="crime" />
-          <label for="crime">Crime</label>
-          <br />
-          <input type="radio" id="dim-light" name="incident" value="dim-light" />
-          <label for="dim-light">Dim Light</label>
-          <br />
-          <input type="radio" id="drug-smell" name="incident" value="drug-smell" />
-          <label for="drug-smell">Smell of Drugs</label>
-          <br />
-          <input type="radio" id="placeholder-1" name="incident" value="placeholder-1" />
-          <label for="placeholder-1">Placeholder</label>
-          <br />
-          <input type="radio" id="placeholder-2" name="incident" value="placeholder-2" />
-          <label for="placeholder-2">Placeholder</label>
-          <br />
-          <input type="radio" id="other" name="incident" value="other" />
-          <label for="other">Other</label>
-          <br />
-        </div>
-        <div>
-          <label for="time">Time of Encounter</label>
-          <input type="text" id="time" name="time"/>
-        </div>
-        <div>
-          <label for="description">Description</label>
-          <input type="text" id="description" name="description"/>
-        </div>
+        <label>
+          <input
+          type="text"
+        />
+        </label>
       </form>
-      <Link to="/home">
-        <button>Back</button>
-      </Link>
-      <Link to="/home">
+      <div class = "submit">
+        <Link to='/home'>
         <button onClick={submitForm}>Submit</button>
-      </Link>
+        </Link>
+      </div>
+      <div class = "back">
+        <Link to='/home'>
+        <button>Back</button>
+        </Link>
+      </div>
     </div>
+
   );
 }

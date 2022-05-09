@@ -29,7 +29,7 @@ const MAP_MODEL = () => {
         ...geocoderDefaultOverrides
       });
     },
-    []
+    [handleViewportChange]
   );
 
   return (

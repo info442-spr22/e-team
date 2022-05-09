@@ -1,7 +1,11 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
-import MAP_MODEL from './Map'
+import HomeMap from './HomeMap'
+// import firebase from 'firebase/compat/app';
+
+
 
 export default function HomePage(props) {
   useEffect(() => {
@@ -38,15 +42,15 @@ export default function HomePage(props) {
   return (
     <div>
       <div id = "map">
-        <MAP_MODEL />
+        <HomeMap />
       </div>
       <div className="boxes">
         <div className="boxes-column col-a">
           <h2>Type in your Trip Details</h2>
-          <p className='homeText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+          <p className='homeText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
