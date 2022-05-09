@@ -1,11 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-
-import { Link } from 'react-router-dom';
+import {Link} from "react-router-dom";
 import HomeMap from './HomeMap'
-// import firebase from 'firebase/compat/app';
-
-
 
 export default function HomePage(props) {
   useEffect(() => {

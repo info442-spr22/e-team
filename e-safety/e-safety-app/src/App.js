@@ -7,8 +7,8 @@ import 'firebase/compat/auth';
 import HomePage from './components/HomePage';
 import SignInPage from './components/SignInPage';
 import ProfilePage from './components/ProfilePage';
-import NavBar from './components/NavBar';
 import ReportPage from './components/ReportPage';
+import NavBar from './components/NavBar';
 
 function App() {
   const [auth, setAuth] = useState(false || window.localStorage.getItem("auth")==="true");
