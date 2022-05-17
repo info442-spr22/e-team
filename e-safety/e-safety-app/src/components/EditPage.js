@@ -9,6 +9,8 @@ export default function EditPage({token}) {
 return(
   <div class = "report">
   <h1>Profile Edit Page</h1>
+  <img src="../img/user.png" alt="Profile Building Error screen" height="200"></img>
+  <p>*Our app does not require user to upload their profile picture!*</p>
     <div class="name">
     <h3>Name:</h3>
     <form>
@@ -20,7 +22,7 @@ return(
       </form>
     </div>
     <div class="address">
-      <h3>Address: </h3>
+      <h3>Email Address: </h3>
       <form>
         <label>
           <input
