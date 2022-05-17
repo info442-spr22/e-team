@@ -9,6 +9,7 @@ import SignInPage from './components/SignInPage';
 import ProfilePage from './components/ProfilePage';
 import ReportPage from './components/ReportPage';
 import NavBar from './components/NavBar';
+import EditPage from './components/EditPage';
 
 function App() {
   const [auth, setAuth] = useState(false || window.localStorage.getItem("auth")==="true");
@@ -59,6 +60,7 @@ function App() {
             <Route path="/home"><HomePage 
             token={token} handleUserData={handleUserData}/></Route>
             <Route path="/profile"><ProfilePage token={token} user={user}/></Route>
+            <Route path="/edit"><EditPage /></Route>
             <Route path="/report"><ReportPage /></Route>
             <Redirect to="/home"/>
           </Switch>
