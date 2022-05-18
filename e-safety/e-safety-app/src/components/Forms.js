@@ -1,7 +1,7 @@
 import 'mapbox-gl/dist/mapbox-gl.css'
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , Redirect} from 'react-router-dom';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import ReactMapGl, {Marker, Popup} from 'react-map-gl'
@@ -28,7 +28,12 @@ class FORM_MODEL extends Component {
       numberLong:0,
       selectedDate: null,
       selectedType: null,
-      descriptionText: ''
+      descriptionText: '',
+      latError:'',
+      longError:'',
+      dateError:'',
+      textError:'',
+      condition: false
     }
     this.handleViewportChange = this.handleViewportChange.bind(this)
     this.handleGeocoderViewportChange = this.handleGeocoderViewportChange.bind(this)
@@ -99,9 +104,36 @@ class FORM_MODEL extends Component {
       descriptionText: event.target.value
     })
   }
+  validate() {
+    let latError = "";
+    let longError = "";
+    let dateError = "";
+    let textError = "";
+    if (this.state.numberLat === 0) {
+      latError = "Please select a location through the search bar in the map";
+    }
+    if (this.state.numberLong === 0) {
+      longError = "Please select a location through the search bar in the map";
+    }
+    if (!this.state.selectedDate) {
+      dateError = "Please select a date";
+    }
+    if (this.state.descriptionText === '') {
+      textError = "Please enter incident details";
+    }
+    if (latError || longError || dateError || textError) {
+      this.setState({ latError,longError,dateError,textError });
+      return false;
+    }
+    return true;
+  }
   handleSubmit(event) {
+    if (this.validate()) {
+      event.preventDefault();
+      console.log(this.state.numberLat);
+      this.setState({ condition: true });
+    }
     event.preventDefault();
-    console.log(this.state.numberLat);
     //variables to submit:
     //this.state.numberLat
     //this.state.numberLong
@@ -110,7 +142,11 @@ class FORM_MODEL extends Component {
     //this.state.descriptionText
   }
   render() {
-    const {viewport, markers, selectedMarker} = this.state
+    const {viewport, markers, selectedMarker} = this.state;
+    const { condition } = this.state;
+    if (condition) {
+       return <Redirect to='/home'/>;
+     }
     return (
       <div>
       <div style={{ height: "100vh" }}>
@@ -167,8 +203,6 @@ class FORM_MODEL extends Component {
       <form id="myForm" onSubmit={this.handleSubmit}>
         <div className="form-group">
         <label>Coordinates:</label>
-        <br />
-        <br/>
         <label>
           Lat:
           <input
@@ -176,6 +210,8 @@ class FORM_MODEL extends Component {
            type="number"
            readOnly value={this.state.numberLat}
          />
+         <br/>
+         <span className="text-danger">{this.state.latError}</span>
         </label>
         <label>
           Long:
@@ -184,9 +220,9 @@ class FORM_MODEL extends Component {
            type="number"
            readOnly value={this.state.numberLong}
          />
+         <br/>
+         <span className="text-danger">{this.state.longError}</span>
         </label>
-        <br/>
-        <br/>
         </div>
         <div className="form-group">
         <label>Select Date: </label>
@@ -198,8 +234,8 @@ class FORM_MODEL extends Component {
           showYearDropdown // year show and scrolldown alos
           scrollableYearDropdown
         />
+        <span className="text-danger">{this.state.dateError}</span>
         </div>
-        <br />
         <br />
         <div className="form-group">
         <label>Select Incident Type: </label>
@@ -217,16 +253,16 @@ class FORM_MODEL extends Component {
         <div className="form-group">
         <label>
           Incident Description:
-          <textarea value={this.state.descriptionText} onChange={this.handleDescription}/>
         </label>
+          <textarea value={this.state.descriptionText} onChange={this.handleDescription}/>
+          <br/>
+          <span className="text-danger">{this.state.textError}</span>
         <br />
         <br />
         </div>
         <div className="form-group">
         </div>
-        <Link to='/home'>
         <button type="submit">Submit</button>
-        </Link>
       </form>
       <div class = "back">
         <Link to='/home'>
