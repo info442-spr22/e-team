@@ -164,7 +164,7 @@ class FORM_MODEL extends Component {
       </ReactMapGl>
       </div>
       <div>
-      <form>
+      <form id="myForm" onSubmit={this.handleSubmit}>
         <div className="form-group">
         <label>Coordinates:</label>
         <br />
@@ -223,10 +223,10 @@ class FORM_MODEL extends Component {
         <br />
         </div>
         <div className="form-group">
-        <Link to='/home'>
-        <button type="submit" onClick={this.handleSubmit}>Submit</button>
-        </Link>
         </div>
+        <Link to='/home'>
+        <button type="submit">Submit</button>
+        </Link>
       </form>
       <div class = "back">
         <Link to='/home'>
