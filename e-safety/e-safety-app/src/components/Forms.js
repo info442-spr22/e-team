@@ -39,6 +39,7 @@ class FORM_MODEL extends Component {
     this.handleDate = this.handleDate.bind(this);
     this.handleType = this.handleType.bind(this);
     this.handleDescription = this.handleDescription.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
   }
   mapRef = React.createRef()
@@ -99,6 +100,8 @@ class FORM_MODEL extends Component {
     })
   }
   handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state.numberLat);
     //variables to submit:
     //this.state.numberLat
     //this.state.numberLong
@@ -161,7 +164,7 @@ class FORM_MODEL extends Component {
       </ReactMapGl>
       </div>
       <div>
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <div className="form-group">
         <label>Coordinates:</label>
         <br />
@@ -171,7 +174,7 @@ class FORM_MODEL extends Component {
           <input
            name="lat"
            type="number"
-           value={this.state.numberLat}
+           readOnly value={this.state.numberLat}
          />
         </label>
         <label>
@@ -179,7 +182,7 @@ class FORM_MODEL extends Component {
           <input
            name="long"
            type="number"
-           value={this.state.numberLong}
+           readOnly value={this.state.numberLong}
          />
         </label>
         <br/>
@@ -203,7 +206,7 @@ class FORM_MODEL extends Component {
         <select value={this.state.selectedType} onChange={this.handleType}>
           <option value="crime">Crime</option>
           <option value="dim light">Dim Light</option>
-          <option selected value="drug activity">Drug Activity</option>
+          <option value="drug activity">Drug Activity</option>
           <option value="yelling/verbal aggression">Yelling/verbal aggression</option>
           <option value="suspicious individuals">Suspicious individuals</option>
           <option value="other">Other</option>
@@ -219,9 +222,11 @@ class FORM_MODEL extends Component {
         <br />
         <br />
         </div>
+        <div className="form-group">
         <Link to='/home'>
-        <input type="submit" value="Submit" />
+        <button type="submit" onClick={this.handleSubmit}>Submit</button>
         </Link>
+        </div>
       </form>
       <div class = "back">
         <Link to='/home'>
