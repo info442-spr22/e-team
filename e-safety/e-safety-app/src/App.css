@@ -7,6 +7,20 @@
   pointer-events: none;
 }
 
+.text-danger {
+  padding: 2px;
+  font-size: 10px;
+  color: red;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 2vh 0;
+
+}
+
 #map {
   width: 80%;
   margin: auto;
