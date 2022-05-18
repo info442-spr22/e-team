@@ -1,10 +1,31 @@
+import axios from 'axios';
 import React from 'react';
 import { Link} from "react-router-dom";
 
-export default function EditPage({token}) {
-  async function submitForm() {
-    // Insert form data into the database
+export default function EditPage(props) {
+
+  const submitForm = (event) => {
+    let newUserInfo = {};
+    if (document.getElementById("name").value !== "") {
+      newUserInfo.name = document.getElementById("name").value;
+    } else {
+      newUserInfo.name = props.user.name;
+    }
+
+    if (document.getElementById("email").value !== "") {
+      newUserInfo.email = document.getElementById("email").value;
+    } else {
+      newUserInfo.email = props.user.email;
+    }
+
+    if (document.getElementById("bio").value !== "") {
+      newUserInfo.bio = document.getElementById("bio").value;
+    } else {
+      newUserInfo.bio = props.user.bio;
+    }
+    props.handleUserData(newUserInfo);
   }
+ 
 
 return(
   <div class = "report">
@@ -16,6 +37,8 @@ return(
     <form>
         <label>
           <input
+          id="name"
+          name="name"
           type="text"
         />
         </label>
@@ -26,6 +49,7 @@ return(
       <form>
         <label>
           <input
+          id="email"
           type="text"
         />
         </label>
@@ -36,6 +60,7 @@ return(
       <form>
         <label>
           <input
+          id="bio"
           type="text"
         />
         </label>

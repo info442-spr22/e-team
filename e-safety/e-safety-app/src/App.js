@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 import { Route, Redirect, Switch } from "react-router-dom";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
@@ -44,12 +45,17 @@ function App() {
     window.localStorage.setItem('auth', false);
   }
 
-  const handleUserData = (data) => {
-    if (!user) {
-      console.log("handleUserData");
-      console.log(data);
-      setUser(data);
-    }
+  const handleUserData = async (data) => {
+    console.log("setting user data")
+    console.log("handleUserData");
+    console.log(data);
+    setUser(data);
+
+    // await axios.patch('http://localhost:8000/user', data, {
+    //   headers: {
+    //     Authorization: "Bearer " + token,
+    //   }
+    // });
   }
 
   return (
@@ -58,9 +64,10 @@ function App() {
           <NavBar logOutOfAccount={logOutOfAccount}/>
           <Switch>
             <Route path="/home"><HomePage 
-            token={token} handleUserData={handleUserData}/></Route>
-            <Route path="/profile"><ProfilePage token={token} user={user}/></Route>
-            <Route path="/edit"><EditPage /></Route>
+              token={token} handleUserData={handleUserData}/></Route>
+            <Route path="/profile"><ProfilePage 
+              token={token} user={user}/></Route>
+            <Route path="/edit"><EditPage token={token} user={user} handleUserData={handleUserData}/></Route>
             <Route path="/report"><ReportPage /></Route>
             <Redirect to="/home"/>
           </Switch>
