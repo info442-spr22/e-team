@@ -149,11 +149,11 @@ class FORM_MODEL extends Component {
      }
     return (
       <div>
-      <div style={{ height: "100vh" }}>
+      <div style={{height: "60vh"}}>
       <ReactMapGl
         ref={this.mapRef}
         {...viewport}
-        width="90%"
+        width="100%"
         height="90%"
         onViewportChange={viewport => this.setState({viewport})}
         mapboxApiAccessToken={mapboxToken}
@@ -263,12 +263,10 @@ class FORM_MODEL extends Component {
         <div className="form-group">
         </div>
         <button type="submit">Submit</button>
-      </form>
-      <div class = "back">
         <Link to='/home'>
         <button>Back</button>
         </Link>
-      </div>
+      </form>
       </div>
       </div>
     )
