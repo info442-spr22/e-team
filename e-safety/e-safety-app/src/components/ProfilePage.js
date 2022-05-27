@@ -23,7 +23,8 @@ export default function ProfilePage(props) {
           </Link>
         </div>
     <div class="note">
-      <h3> Make a incident report on the map to secure night walk safer for UW students! </h3>
+      <h3> If you are a first-time user, there wouldn't be any information displayed on your profile.</h3>
+      <h5> Please click on edit button to update your profile!</h5>
     </div>
     <div class="return" style={{display:'flex', justifyContent:'flex-end'}}>
       <Link to='/home'>
