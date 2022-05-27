@@ -59,20 +59,23 @@ h1 {
   padding: 1em;
 }
 
-.incident{
-  color:black;
-  border-radius:10%;
-  margin-top: 500px;
-  background-color: #FFCB3E;
-}
-
 h2 {
   text-align: left;
-  margin-left: 1cm;
+  margin-left: 8rem;
 }
 
 .home {
   color:black;
   border-radius:5%;
   background-color: #FFCB3E;
+}
+
+.report {
+ margin-right: 9rem;
+
+}
+
+h4 {
+  margin-left: 8rem;
+  text-align: left;
 }
