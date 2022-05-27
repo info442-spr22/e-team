@@ -36,7 +36,11 @@ export default function HomePage(props) {
   }
 
   return (
-    <div>
+    <div className="zoom">
+    <h1>Welcome to Secure U Distrcit</h1>
+      <h5>
+         Please press on + and - on your keyboard to zoom in and out the map!
+          </h5>
       <div id = "map">
         <HomeMap />
       </div>
