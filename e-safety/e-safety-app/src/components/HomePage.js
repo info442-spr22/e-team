@@ -42,17 +42,15 @@ export default function HomePage(props) {
       </div>
       <div className="boxes">
         <div className="boxes-column col-a">
-          <h2>Type in your Trip Details</h2>
-          <p className='homeText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <h2>About Secure U District</h2>
+          <h4>
+          As students at the University of Washington start to live off campus due to the pandemic and limited dorm capacity, safety with students walking home becomes a crucial issue. Many off-campus UW students have little access to resources that can help them secure a route home that shows no threat to their safety, especially during night time.
+          This web map application helps UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid. 
+          </h4>
         </div>
-        <div className="report">
+        <div className="report" style={{display:'flex', justifyContent:'flex-end'}}>
           <Link to="/report">
-            <button type="button" className="btn incident">Report an Incident</button>
+            <button onClick={props.logOutOfAccount}>Report an Incident</button>
           </Link>
         </div>
       </div>
