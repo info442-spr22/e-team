@@ -16,7 +16,7 @@ export default function HomeMap() {
   });
 
   return (
-    <div style={{ height: "60vh" }}>
+    <div style={{ height: "55vh" }}>
     <ReactMapGL
       {...viewport}
       width="100%"
