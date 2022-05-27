@@ -29,9 +29,14 @@ button {
 }
 
 .btn.profile {
-  height:80px;
-  width:50px;
-  text-align: center;
+  font-family: Georgia;
+  color: black;
+  border-radius:10%;
+  border-color: #FFCB3E;
+  box-shadow: 0 .2rem 1rem rgba(69, 69, 69, 0.1);
+  background-color: #FFCB3E;
+  height:50px;
+  width:100px;
 }
 
 h1 {

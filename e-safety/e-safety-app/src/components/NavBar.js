@@ -9,14 +9,13 @@ export default function NavBar(props)  {
       </div>
       <div className="profile" style={{display:'flex', justifyContent:'flex-end'}}>
         <ul>
-          <li><Link to="/home">
-              Home
-            </Link></li>
-          <li><Link to="/profile">
-              Profile
+          <Link to="/home">
+          <button onClick={props.logOutOfAccount}>Home</button>
             </Link>
-          </li>
-          <li><button onClick={props.logOutOfAccount}>Logout</button></li>
+          <Link to="/profile">
+          <button onClick={props.logOutOfAccount}>Profile</button>
+            </Link>     
+          <button onClick={props.logOutOfAccount}>Logout</button>
         </ul>
       </div>
     </div>
