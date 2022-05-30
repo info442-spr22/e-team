@@ -23,6 +23,12 @@ button {
   width:100px;
 }
 
+button:hover {
+ background-color: #ffe395; 
+ border-color: #ffe395;
+ cursor: pointer;
+}
+
 .titlebar {
   color: #FFCB3E;
   background-color: #7E549F !important;
