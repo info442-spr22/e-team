@@ -63,9 +63,9 @@ function App() {
         {auth ? (<div>
           <NavBar logOutOfAccount={logOutOfAccount}/>
           <Switch>
-            <Route path="/home"><HomePage 
+            <Route path="/home"><HomePage
               token={token} handleUserData={handleUserData}/></Route>
-            <Route path="/profile"><ProfilePage 
+            <Route path="/profile"><ProfilePage
               token={token} user={user}/></Route>
             <Route path="/edit"><EditPage token={token} user={user} handleUserData={handleUserData}/></Route>
             <Route path="/report"><ReportPage /></Route>

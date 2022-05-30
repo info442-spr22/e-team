@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function ReportPage({token}) {
 
   return (
-    <div class = "report" >
+    <div className = "report" >
       <h1>Report an Incident</h1>
       <h5>Please type in the address and click "confirm" button.
       </h5>

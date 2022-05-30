@@ -1,10 +1,26 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
-import {Link} from "react-router-dom";
+import React, { useEffect ,useLocation, useState} from 'react';
+import {Link, withRouter} from "react-router-dom";
 import HomeMap from './HomeMap'
 
-export default function HomePage(props) {
+function HomePage(props) {
+  const forms = JSON.parse(localStorage.getItem('form') || "[]");
+  if (props.location.state != undefined){
+    forms.push({"Lat": props.location.state.Lat, "Long": props.location.state.Long, "Date": props.location.state.Date, "Type":props.location.state.Type, "Text": props.location.state.Text});
+    window.localStorage.setItem('form', JSON.stringify(forms))
+  }
+  const markerinfo = JSON.parse(window.localStorage.getItem('form'));
+  //const [todos, setTodos] = useState([]);
+  //const todosCopy = [];
+  //useEffect(() => {
+    //if (props.location.state != undefined) {
+      //todosCopy.push({"Lat": props.location.state.Lat, "Long": props.location.state.Long, "Date": props.location.state.Date, "Type":props.location.state.Type, "Text": props.location.state.Text});
+      //setTodos(todosCopy);
+    //}
+  //}, [props.location.state]);
+
   useEffect(() => {
+    console.log(markerinfo);
     if (props.token) {
       fetchData(props.token);
     }
@@ -37,27 +53,27 @@ export default function HomePage(props) {
 
   return (
     <div className="zoom">
-    <h1>Welcome to Secure U District</h1>
-      <h5>
-         Please press on + and - on your keyboard to zoom in and out the map!
+      <div id = "intro">
+      <h1 id= "welcome">Welcome to Secure U District</h1>
+          <div id = "purpose">
+            <p id = "summary">
+            As students at the University of Washington start to live off campus due to the pandemic and limited dorm capacity, safety with students walking home becomes a crucial issue. Many off-campus UW students have little access to resources that can help them secure a route home that shows no threat to their safety, especially during night time.
+            This web map application helps UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid.
+            </p>
+          </div>
+          <h5>
+             (Please press on + and - on your keyboard to zoom in and out the map!)
           </h5>
-      <div id = "map">
-        <HomeMap />
       </div>
-      <div className="boxes">
-        <div className="boxes-column col-a">
-          <h2>About Secure U District</h2>
-          <h4>
-          As students at the University of Washington start to live off campus due to the pandemic and limited dorm capacity, safety with students walking home becomes a crucial issue. Many off-campus UW students have little access to resources that can help them secure a route home that shows no threat to their safety, especially during night time.
-          This web map application helps UW students identify possible dangerous routes and sites ahead of any potential crimes or factors that people may want to avoid. 
-          </h4>
+        <div id = "map">
+          <HomeMap markerinfo = {markerinfo}/>
         </div>
-        <div className="report" style={{display:'flex', justifyContent:'flex-end'}}>
+        <div>
           <Link to="/report">
-            <button onClick={props.logOutOfAccount}>Report an Incident</button>
+            <button onClick={props.logOutOfAccount} className="report-btn">Report an Incident</button>
           </Link>
         </div>
-      </div>
     </div>
   );
 }
+export default withRouter(HomePage)

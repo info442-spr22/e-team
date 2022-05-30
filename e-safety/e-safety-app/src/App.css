@@ -13,27 +13,6 @@
   color: red;
 }
 
-label {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    margin: 0 0 2vh 0;
-
-}
-
-#map {
-  width: 80%;
-  margin: auto;
-  padding-top: 2em;
-  padding-bottom: 2em;
- }
-
- #confirm {
-  position: absolute;
-  right: 10px;
-  top: 60px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

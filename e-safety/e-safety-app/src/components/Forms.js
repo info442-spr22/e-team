@@ -1,7 +1,7 @@
 import 'mapbox-gl/dist/mapbox-gl.css'
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import React, { Component } from 'react';
-import { Link , Redirect} from 'react-router-dom';
+import { Link , Redirect, withRouter} from 'react-router-dom';
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import ReactMapGl, {Marker, Popup} from 'react-map-gl'
@@ -75,8 +75,7 @@ class FORM_MODEL extends Component {
     this.setState(prevState => ({
       numberLat: currMarker.latitude,
       numberLong: currMarker.longitude,
-      markers: [currMarker],
-      currMarker: null
+      markers: [currMarker]
     }))
   }
   handleMarkerClick(marker) {
@@ -108,6 +107,7 @@ class FORM_MODEL extends Component {
     let latError = "";
     let longError = "";
     let dateError = "";
+    let typeError = "";
     let textError = "";
     if (this.state.numberLat === 0) {
       latError = "Please select a location through the search bar in the map";
@@ -118,11 +118,14 @@ class FORM_MODEL extends Component {
     if (!this.state.selectedDate) {
       dateError = "Please select a date";
     }
+    if (!this.state.selectedType) {
+      typeError = "Please select an incident type!";
+    }
     if (this.state.descriptionText === '') {
       textError = "Please enter incident details";
     }
-    if (latError || longError || dateError || textError) {
-      this.setState({ latError,longError,dateError,textError });
+    if (latError || longError || dateError || typeError || textError) {
+      this.setState({ latError,longError,dateError,typeError,textError });
       return false;
     }
     return true;
@@ -131,6 +134,7 @@ class FORM_MODEL extends Component {
     if (this.validate()) {
       event.preventDefault();
       console.log(this.state.numberLat);
+       alert('Your report was submitted successfully');
       this.setState({ condition: true });
     }
     event.preventDefault();
@@ -143,13 +147,22 @@ class FORM_MODEL extends Component {
   }
   render() {
     const {viewport, markers, selectedMarker} = this.state;
-    const { condition } = this.state;
+    const {condition } = this.state;
     if (condition) {
-       return <Redirect to='/home'/>;
+       return <Redirect to={{
+            pathname: "/home",
+            state: {
+              Lat: this.state.numberLat,
+              Long: this.state.numberLong,
+              Date: this.state.selectedDate,
+              Type: this.state.selectedType,
+              Text: this.state.descriptionText
+            }
+          }}/>;
      }
     return (
-      <div>
-      <div style={{height: "60vh"}}>
+      <div id= "forms">
+      <div style={{height: "60vh"}} id= "form-map">
       <ReactMapGl
         ref={this.mapRef}
         {...viewport}
@@ -159,7 +172,7 @@ class FORM_MODEL extends Component {
         mapboxApiAccessToken={mapboxToken}
         mapStyle="mapbox://styles/fuwak0o0/cl2vqyhwn000n14tgci6txwby"
       >
-        <button className="add-btn" id="confirm" onClick={this.addMarker}>Confirm</button>
+        <button className="add-btn" id="form-btn" onClick={this.addMarker}>Confirm</button>
         {markers.map((marker, idx) => {
           return (
             <Marker
@@ -170,7 +183,7 @@ class FORM_MODEL extends Component {
               offsetLeft={-10}
               offsetTop={-25}
             >
-            <img id="reportMarker" src="https://www.pngkey.com/png/full/196-1963823_map-clip-art-at-clker-com-vector-purple.png" width="20" height="30" alt="marker"/>
+            <img id="reportMarker" src={process.env.PUBLIC_URL + 'img/pin-purple.png'} width="20" height="30" alt="marker"/>
             </Marker>
           )
         })
@@ -185,25 +198,13 @@ class FORM_MODEL extends Component {
           countries="us"
           position="top-right"
         />
-        {this.state.selectedMarker &&
-          <Popup
-          mapRef={this.mapRef}
-          latitude={selectedMarker.latitude}
-          longitude={selectedMarker.longitude}
-          closeButton={true}
-          closeOnClick={false}
-          onClose={this.handleClose}
-        >
-            <h3>{selectedMarker.latitude}, {selectedMarker.longitude}</h3>
-        </Popup>
-      }
       </ReactMapGl>
       </div>
       <div>
       <form id="myForm" onSubmit={this.handleSubmit}>
         <div className="form-group">
-        <label>Coordinates:</label>
-        <label>
+        <p id = "coord-title">Coordinates: <h5 id = "coord-note">(can only be updated through selecting a new location in the map)</h5> </p>
+        <label id = "coord">
           Lat:
           <input
            name="lat"
@@ -213,7 +214,7 @@ class FORM_MODEL extends Component {
          <br/>
          <span className="text-danger">{this.state.latError}</span>
         </label>
-        <label>
+        <label id = "coord" >
           Long:
           <input
            name="long"
@@ -240,15 +241,16 @@ class FORM_MODEL extends Component {
         <div className="form-group">
         <label>Select Incident Type: </label>
         <select value={this.state.selectedType} onChange={this.handleType}>
-          <option value="crime">Crime</option>
-          <option value="dim light">Dim Light</option>
-          <option value="drug activity">Drug Activity</option>
-          <option value="yelling/verbal aggression">Yelling/verbal aggression</option>
-          <option value="suspicious individuals">Suspicious individuals</option>
-          <option value="other">Other</option>
+          <option value="Crime">Crime</option>
+          <option value="Dim Light">Dim Light</option>
+          <option value="Drug Activity">Drug Activity</option>
+          <option value="Yelling/Verbal Aggression">Yelling/Verbal Aggression</option>
+          <option value="Suspicious Individuals">Suspicious Individuals</option>
+          <option value="Other">Other</option>
         </select>
-        </div>
         <br />
+        <span className="text-danger">{this.state.typeError}</span>
+        </div>
         <br />
         <div className="form-group">
         <label>
@@ -262,10 +264,10 @@ class FORM_MODEL extends Component {
         </div>
         <div className="form-group">
         </div>
-        <button type="submit">Submit</button>
         <Link to='/home'>
-        <button>Back</button>
+        <button className = "back-btn">Back</button>
         </Link>
+        <button type="submit" className = "submit-btn">Submit</button>
       </form>
       </div>
       </div>
@@ -273,4 +275,4 @@ class FORM_MODEL extends Component {
   }
 }
 
-export default FORM_MODEL;
+export default withRouter(FORM_MODEL)
