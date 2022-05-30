@@ -28,6 +28,14 @@ async function dbConnect() {
     emergency_contacts: {type: Array, default: []} // this is their email address
   });
 
+  const mapSchema = new mongoose.Schema({
+    lat: Number,
+    long: Number,
+    date: Date,
+    type: String,
+    text: String
+  })
+
   const emergencyContactSchema = new mongoose.Schema({
     ecid: String, // this will be the user's uid + ec's email
     name: String,
@@ -36,6 +44,7 @@ async function dbConnect() {
   });
 
   db.User = mongoose.model('User', userSchema);
+  db.Map = mongoose.model('Map', mapSchema);
   
   console.log("created the user schema");
 }
@@ -102,7 +111,8 @@ app.post('/user', async (req, res) => {
 
 app.patch('/user', async (req, res) => {
   try {
-    await req.db.User.findOneAndUpdate({username: req.info.user_id}, req.headers);
+    console.log("INSIDE PATCH");
+    await req.db.User.findOneAndUpdate({username: req.info.user_id}, req.body);
     res.json({status: 'success'});    
   } catch(e) {
     console.log(e);

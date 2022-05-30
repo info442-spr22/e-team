@@ -46,16 +46,20 @@ function App() {
   }
 
   const handleUserData = async (data) => {
-    console.log("setting user data")
     console.log("handleUserData");
     console.log(data);
     setUser(data);
 
-    // await axios.patch('http://localhost:8000/user', data, {
-    //   headers: {
-    //     Authorization: "Bearer " + token,
-    //   }
-    // });
+    await axios.patch('http://localhost:8000/user', data, {
+      headers: {
+        Authorization: "Bearer " + token,
+      }
+    });
+    console.log("setting user data into database")
+  }
+
+  const submitMapData = async (data) => {
+    console.log(data);
   }
 
   return (
@@ -68,7 +72,11 @@ function App() {
             <Route path="/profile"><ProfilePage 
               token={token} user={user}/></Route>
             <Route path="/edit"><EditPage token={token} user={user} handleUserData={handleUserData}/></Route>
-            <Route path="/report"><ReportPage /></Route>
+            <Route path="/report">
+              <ReportPage 
+                submitMapData={submitMapData}
+              />
+            </Route>
             <Redirect to="/home"/>
           </Switch>
         </div>

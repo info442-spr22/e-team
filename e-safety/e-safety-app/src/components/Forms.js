@@ -99,6 +99,7 @@ class FORM_MODEL extends Component {
       descriptionText: event.target.value
     })
   }
+
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state.numberLat);
@@ -108,7 +109,16 @@ class FORM_MODEL extends Component {
     //this.state.selectedDate
     //this.state.selectedType
     //this.state.descriptionText
+    let mapData = {
+      lat: this.state.numberLat,
+      long: this.state.numberLong,
+      date: this.state.selectedDate,
+      type: this.state.selectedType,
+      text: this.state.descriptionText
+    }
+    this.props.submitMapData(mapData);
   }
+
   render() {
     const {viewport, markers, selectedMarker} = this.state
     return (
@@ -224,13 +234,13 @@ class FORM_MODEL extends Component {
         </div>
         <div className="form-group">
         <Link to='/home'>
-        <button type="submit" onClick={this.handleSubmit}>Submit</button>
+          <button onClick={this.handleSubmit}>Submit</button>
         </Link>
         </div>
       </form>
       <div class = "back">
         <Link to='/home'>
-        <button>Back</button>
+          <button>Back</button>
         </Link>
       </div>
       </div>
