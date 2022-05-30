@@ -233,6 +233,7 @@ class FORM_MODEL extends Component {
           placeholderText={'dd/mm/yyyy'}
           showYearDropdown // year show and scrolldown alos
           scrollableYearDropdown
+          required
         />
         <span className="text-danger">{this.state.dateError}</span>
         </div>
@@ -254,7 +255,7 @@ class FORM_MODEL extends Component {
         <label>
           Incident Description:
         </label>
-          <textarea value={this.state.descriptionText} onChange={this.handleDescription}/>
+          <textarea required value={this.state.descriptionText} onChange={this.handleDescription}/>
           <br/>
           <span className="text-danger">{this.state.textError}</span>
         <br />
